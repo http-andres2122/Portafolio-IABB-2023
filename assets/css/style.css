@@ -1,0 +1,31 @@
+/* body{
+    width: ;
+    margin: 0 auto;
+} */
+
+/*----NavBar-----*/
+
+.menu__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    margin-left: 0.7rem;
+    margin-right: 0.7rem;
+}
+
+.enlaces-nav{
+    display: flex;
+    
+}
+
+.nav__item {
+    margin: 0.7rem auto auto 0.7rem;
+}
+
+/* ----Titulo-Links---*/
+
+/* ----Sobre mi---*/
+
+/* ----Skills----*/
+
