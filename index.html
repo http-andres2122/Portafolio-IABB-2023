@@ -12,9 +12,9 @@
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
     <title>Portafolio-Ivan Barbosa</title>
 </head>
-<body class="pp">
-    <header>
+<body class="pp stl">
 <!---------------NAV-links---------------->
+    <header>
         <div class="menu__container">
             <h3>
                 Ivan Barbosa
@@ -26,16 +26,16 @@
                     <li class="nav__item"><a href="" >Hobbies</a></li>
                     <li class="nav__item"><a href="" >Formacion</a></li>
                     <li class="nav__item"><a href="" >Proyectos</a></li>
-                    <li class="nav__item c"><a href="" >ivanbb2013@gmail.com</a></li>
+                    <li class="nav__item"><a href="" >ivanbb2013@gmail.com</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <main class="principal">
+    <main class="principal stl" >
 <!----------------Titulo-Links------------->
         <section class="titulo">
-            <!-- <img src="assets/img/ph-bio.jpg" alt="foto bio"> -->
-            <div class="titulo-container">
+            <img class="foto__perfil" src="assets/img/ph-bio.jpg" alt="foto bio">
+            <div class="titulo__container">
                 <h1>Hola, soy Ivan Barbosa y contruyo paginas web</h1>
                 <p>soy formado en analisis y desarollo de sistemas de informacion, manejo de protocolos de internet y estoy produndizando en el aprendizaje de desarollo web de la mano de Oracle ONE en Alura Latam.</p>
                 <nav>
@@ -196,8 +196,41 @@
         </section>
 <!--------------Experiencia Profesional ----------------->
         <section class="experiencia">
-            
+            <h3>Proyectos</h3>
+            <div class="experiencia__box">
+                <img class="experiencia__img" src="assets/img/encrypt ts.png" alt="">
+                <div class="experiencia__usr">
+                    <p>Encryptador</p>
+                    <p>Challenge Oracle Next Education </p>
+                    <div class="experiencia__botones">
+                        <a href="">Repositorio</a>
+                        <a href="">Prueba</a>
+                    </div>
+                </div>
+            </div>
         </section>
+<!--------------Contacto----------------->
+        <section class="contacto">
+            <img src="assets/img/svg/chat.svg" alt="contacto">
+            <div class="contactoform__text">
+                <h2>Contacto</h2>
+                <h3>¿Quieres Contactarme?</h3>
+                <h3>Completa el siguiente formulario y me pondre en contacto contigo lo antes posible</h3>
+                <form action="" class="contactoform">
+                    <input class="contactoform__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                    <input class="contactoform__input" type="email" id="correo" name="correo" placeholder="Correo@dominio.com">
+                    <input class="contactoform__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
+                    <textarea class="contactoform__input" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                    <button class="contactoform__input" type="submit" >Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+<!--------------footer----------------->
+        <footer class="footer">
+            <div class="footer__text">
+                <p>Hecho por <span><a href="https://github.com/http-andres2122">http.andres2122</a></span> | &copy; 2023</p>
+            </div>
+        </footer>
     </main>
 </body>
 </html>
