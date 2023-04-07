@@ -1,31 +1,147 @@
-/* body{
-    width: ;
-    margin: 0 auto;
-} */
+:root {
+
+    --pirem: 3.14rem;
+    --margincentrador: 0 auto;
+    --pivh: 3.14vh;
+    --pivw: 3.14vw;
+    --lettersize: 1.5;
+    --colorsobre: #ebf4ff;
+    --colorblanco: #FFF;
+    --colorfondo: #fbfbfb;
+    --colortitulos: #4d4a4a;
+    --colorazulclaro: #dde8f7;
+
+}
+
+/*----fix issues-----*/
+.td{
+    font-family: 'Raleway', sans-serif;
+    width: 80rem;
+    background-color: var(--colorfondo);
+    margin: var(--margincentrador);
+}
+
+ol ul li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
 
 /*----NavBar-----*/
+
+.iabb{
+
+}
 
 .menu__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10vh;
-    margin-left: 0.7rem;
-    margin-right: 0.7rem;
+    height: var(--pirem);
+    padding-top: var(--pivh)
 }
 
 .enlaces-nav{
     display: flex;
-    
+    width: 44vw;
+    justify-content: space-between;
 }
 
 .nav__item {
-    margin: 0.7rem auto auto 0.7rem;
+    /* margin: 0.7rem auto auto 0.7rem; */
 }
 
 /* ----Titulo-Links---*/
+.titulo {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* flex-wrap: nowrap; */
+    flex-direction: row-reverse;
+    margin-top: var(--pivh);
+}
+.foto__perfil{
+    width: 16rem;
+    border-radius: 10rem;
+}
 
+.titulo__container{
+    width: 55vw;
+}
+
+.hi{
+    font-size: var(--pirem);
+    font-weight: 700;
+    color: #4d4a4a;
+    margin-bottom: 23px;
+}
+
+.enlaces-container{
+    display: flex;
+    justify-content: space-between;
+    width: 19vw;
+    margin-top: 9vh;
+}
+
+.enlaces-container img{
+    width: var(--pirem);
+}
 /* ----Sobre mi---*/
+.info {
+    display: flex;
 
+}
 /* ----Skills----*/
+.skills{
+    width: 60%;
+    padding: 60px 0 0 0;
+    text-align: center;
+    margin: var(--margincentrador)
+}
 
+.skills-titulop{
+    margin-bottom: var(--pirem);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--colortitulos)
+}
+
+.skills__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__box{
+    margin-bottom: 1rem;
+    background-color: var(--colorblanco);
+    margin-right: 1rem;
+    border-radius: 13px;
+    box-shadow: 12px 9px 8px 0px rgba(0,0,0,0.08);
+}
+.skills__box-contenido{
+    display: flex;
+    width: 7rem;
+    height: 8.75rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skill_img{
+    width: var(--pirem);
+}
+/* ----hobbies----*/
+
+
+/* ----formacion----*/
+.formacion{
+    display: flex;
+}
+
+.formacion_img{
+    max-height: 50%;
+    max-width: 50%;
+}
