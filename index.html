@@ -51,7 +51,7 @@
         <section class="info">
             <div class="info__container">
                 <h2>Sobre mi</h2>
-                <p>amante de la tecnologia, me gusta programar, tecnico en desarrollo de software, experiencia como jefe de proyectos de infraestructura de red, desarollador Front-End en proceso con conocimiento de React native, participante de diferentes programas como Oracle Next Education, OpenBootCamp y Linkedin learning, enfocado en la solucion de problemas que presente el cliente dia a dia.
+                <p>Amante de la tecnologia, me gusta programar y dia a dia aprender nuevas tecnicas de ello, tecnico en desarrollo de software, experiencia como jefe de proyectos de infraestructura de red, desarollador Front-End en proceso con conocimiento de React native, participante de diferentes programas como Oracle Next Education, OpenBootCamp y Linkedin learning, enfocado en la solucion de problemas que presente el cliente dia a dia.
                     </p>
             </div>
         </section>
@@ -136,10 +136,10 @@
 <!-------------- Hobbies ----------------->
         <section class="hobbies">
             <h3>Hobbies</h3>
-            <div class="hobbies_cards">
+            <div class="hobbies__cards">
                 <div class="hobbies__box">
                     <ul>
-                        <li><img class="hobbies_img" src="assets/img/svg/road.svg"></li>
+                        <li><img class="hobbies__img" src="assets/img/svg/road.svg"></li>
                         <li class="hobbies_titulo">Rodar</li>
                     </ul>
                 </div>
@@ -151,45 +151,45 @@
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="cont__hobbies_img"><img class="hobbies__img" src="assets/img/svg/book-2.svg"></li>
+                        <li><img class="hobbies__img" src="assets/img/svg/book-2.svg"></li>
                         <li class="hobbies_titulo">Lectura</li>
                     </ul>
                 </div>
                 <div class="hobbies__box">
                     <ul>
-                        <li class="cont__hobbies_img"><img class="hobbies__img" src="assets/img/svg/brand-deezer.svg"></li>
+                        <li><img class="hobbies__img" src="assets/img/svg/brand-deezer.svg"></li>
                         <li class="hobbies_titulo">Musica</li>
                     </ul>
                 </div>
-            </div>
-            <div class="hobbies__box">
-                <ul>
-                    <li class="cont__hobbies_img"><img class="hobbies__img" src="assets/img/svg/movie.svg"></li>
-                    <li class="hobbies_titulo">Peliculas</li>
-                </ul>
+                <div class="hobbies__box">
+                    <ul>
+                        <li><img class="hobbies__img" src="assets/img/svg/movie.svg"></li>
+                        <li class="hobbies_titulo">Peliculas</li>
+                    </ul>
+                </div>
             </div>
         </section>
 <!--------------Formacion academica ----------------->
         <section class="formacion">
-            <h3>Formaciones</h3>
+            <h3>Formacion Academica</h3>
             <div class="formacion__cards">
                 <div class="formaciones__box">
                     <ul>
-                        <li><img class="formacion_img" src="assets/img/sena.jpg"></li>
-                        <li class="formacion_titulo">Tecnologo en Analisis y Desarollo de Informacion [2020 - 2022] Sena
+                        <li><img class="formacion_img" src="assets/img/svg/Sena_Colombia_logo.svg"></li>
+                        <li class="formacion_titulo"> <span>Tecnologo en Analisis y Desarollo de Informacion</span> [2020 - 2022] Sena
                         </li>
                     </ul>
                 </div>
                 <div class="formaciones__box">
                     <ul>
                         <li><img class="formacion_img" src="assets/img/Open-Bootcamp.png"></li>
-                        <li class="formacion_titulo"> Desarollo Back-End [En Curso] Open-Bootcamp</li>
+                        <li class="formacion_titulo"> <span>Desarollo Back-End</span> [En Curso] Open-Bootcamp</li>
                     </ul>
                 </div>
                 <div class="formaciones__box">
                     <ul>
-                        <li><img class="formacion_img" src="assets/img/aluraoracle.jpg"></li>
-                        <li class="formacion_titulo"> Desarollo Front-End [En Curso] Alura Latam - Oracle one</li>
+                        <li><img class="formacion_img" src="assets/img/svg/alurasvg.svg"></li>
+                        <li class="formacion_titulo"> <span>Desarollo Front-End</span> [En Curso] Alura Latam - Oracle one</li>
                     </ul>
                 </div>
             </div>
@@ -211,18 +211,20 @@
         </section>
 <!--------------Contacto----------------->
         <section class="contacto">
-            <img src="assets/img/svg/chat.svg" alt="contacto">
-            <div class="contactoform__text">
-                <h2>Contacto</h2>
-                <h3>¿Quieres Contactarme?</h3>
-                <h3>Completa el siguiente formulario y me pondre en contacto contigo lo antes posible</h3>
-                <form action="" class="contactoform">
-                    <input class="contactoform__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
-                    <input class="contactoform__input" type="email" id="correo" name="correo" placeholder="Correo@dominio.com">
-                    <input class="contactoform__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
-                    <textarea class="contactoform__input" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
-                    <button class="contactoform__input" type="submit" >Enviar Mensaje</button>
-                </form>
+            <div class="contacto_container">
+                <img src="assets/img/svg/chat.svg" alt="contacto">
+                <div class="contactoform__text">
+                    <h2>Contacto</h2>
+                    <h3>¿Quieres Contactarme?</h3>
+                    <h3>Completa el siguiente formulario y me pondre en contacto contigo lo antes posible</h3>
+                </div>
+                    <form action="" class="contactoform">
+                        <input class="contactoform__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
+                        <input class="contactoform__input" type="email" id="correo" name="correo" placeholder="Correo@dominio.com">
+                        <input class="contactoform__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
+                        <textarea class="contactoform__input" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <button class="contactoform__input" type="submit" >Enviar Mensaje</button>
+                    </form>
             </div>
         </section>
 <!--------------footer----------------->
