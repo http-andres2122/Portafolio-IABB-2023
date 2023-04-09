@@ -7,16 +7,17 @@
     --lettersize: 1.5;
     --colorsobre: #ebf4ff;
     --colorblanco: #FFF;
-    --colorfondo: #fbfbfb;
+    --colorfondo: #f4efef59;
     --colortitulos: #4d4a4a;
     --colorazulclaro: #dde8f7;
 
 }
 
 /*----fix issues-----*/
+
 .td{
     font-family: 'Raleway', sans-serif;
-    width: 80rem;
+    width: 96%;
     background-color: var(--colorfondo);
     margin: var(--margincentrador);
 }
@@ -33,7 +34,7 @@ a {
 /*----NavBar-----*/
 
 .iabb{
-
+    color: #1c5e00;
 }
 
 .menu__container{
@@ -41,7 +42,7 @@ a {
     justify-content: space-between;
     align-items: center;
     height: var(--pirem);
-    padding-top: var(--pivh)
+    padding-top: var(--pivh);
 }
 
 .enlaces-nav{
@@ -50,26 +51,31 @@ a {
     justify-content: space-between;
 }
 
-.nav__item {
-    /* margin: 0.7rem auto auto 0.7rem; */
+.nav__item a {
+    color: #000;
 }
 
 /* ----Titulo-Links---*/
+
 .titulo {
     display: flex;
-    /* align-items: center; */
     justify-content: space-between;
-    /* flex-wrap: nowrap; */
     flex-direction: row-reverse;
     margin-top: var(--pivh);
 }
 .foto__perfil{
-    width: 16rem;
-    border-radius: 10rem;
+    width: 18rem;
+    border-radius: 15rem;
+    margin: 0 3.14rem 3.14rem;
 }
 
 .titulo__container{
-    width: 55vw;
+    width: 57vw;
+}
+
+.titulo__container p {
+    text-align: justify;
+    font-size: 1.4rem;
 }
 
 .hi{
@@ -81,48 +87,64 @@ a {
 
 .enlaces-container{
     display: flex;
-    justify-content: space-between;
-    width: 19vw;
-    margin-top: 9vh;
+    padding: var(--pirem);
+    justify-content: space-around;
 }
 
 .enlaces-container img{
     width: var(--pirem);
 }
-/* ----Sobre mi---*/
-.info {
-    display: flex;
 
+/* ----Sobre mi---*/
+
+.info {
+    background-color: var(--colorazulclaro);
+    padding: 3rem;
 }
-/* ----Skills----*/
-.skills{
-    width: 60%;
+
+.info h2 {
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+}
+
+.info p {
+    width: 70%;
+    text-align: justify;
+    line-height: 20px;
+}
+
+/* ----Skills, hobbies----*/
+
+.skills, .hobbies{
+    max-width: 70%;
     padding: 60px 0 0 0;
     text-align: center;
     margin: var(--margincentrador)
 }
 
-.skills-titulop{
+/* ----Titulos----*/
+
+.skills h3, .hobbies h3, .formacion h3{
     margin-bottom: var(--pirem);
     font-size: 2rem;
     font-weight: 600;
     color: var(--colortitulos)
 }
 
-.skills__cards{
+.skills__cards, .hobbies__cards{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.skills__box{
+.skills__box, .hobbies__box{
     margin-bottom: 1rem;
     background-color: var(--colorblanco);
     margin-right: 1rem;
     border-radius: 13px;
     box-shadow: 12px 9px 8px 0px rgba(0,0,0,0.08);
 }
-.skills__box-contenido{
+.skills__box-contenido, .hobbies__box ul{
     display: flex;
     width: 7rem;
     height: 8.75rem;
@@ -130,18 +152,107 @@ a {
     justify-content: center;
 }
 
-.skill_img{
+.skill_img, .hobbies__img{
     width: var(--pirem);
 }
-/* ----hobbies----*/
-
 
 /* ----formacion----*/
-.formacion{
+
+.formacion {
+    max-width: 85%;
+    padding: 60px 0 0 0;
+    text-align: center;
+    margin: var(--margincentrador)
+}
+
+.formacion__cards{
+    background: var(--colorazulclaro);
+    padding: 1rem;
     display: flex;
+    justify-content: space-between;
+}
+
+.formaciones__box  ul{
+    width: 18rem;
+    height: 18rem;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.formaciones__box li {
+    border-radius: 1rem;
+}
+
+.formaciones__box li span{
+    font-weight: bold;
+}
+
+.formacion_titulo {
+    background: var(--colorblanco);
+    padding: 11px;
 }
 
 .formacion_img{
-    max-height: 50%;
-    max-width: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+/*----Experiencia Laboral----*/
+
+.experiencia {
+    height: 90vh;
+    padding: 60px 0 0 0;
+    text-align: center;
+}
+
+.experiencia h3 {
+    margin-bottom: var(--pirem);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--colortitulos);
+}
+
+.experiencia__box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.experiencia__img {
+    width: 20%;
+}
+
+/*----Contacto----*/
+.contacto {
+    padding: 1.75rem;
+    background: aliceblue;
+}
+
+.contacto_container {
+    display: flex;
+    height: 26rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contacto img {
+    height: 25rem;
+}
+
+.contactoform__text {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.contactoform {
+    display: flex;
+    flex-direction: column;
+}
+
+/*----footer----*/
+.footer {
+    padding: 2rem;
+    text-align: center;
 }
