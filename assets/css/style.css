@@ -5,6 +5,8 @@
     --pivh: 3.14vh;
     --pivw: 3.14vw;
     --lettersize: 1.5;
+    --weighttitulos:600;
+    --sizetitulos:2rem;
     --colorsobre: #ebf4ff;
     --colorblanco: #FFF;
     --colorfondo: #f4efef59;
@@ -14,6 +16,9 @@
 }
 
 /*----fix issues-----*/
+html{
+    scroll-behavior: smooth;
+}
 
 .td{
     font-family: 'Raleway', sans-serif;
@@ -126,8 +131,8 @@ a {
 
 .skills h3, .hobbies h3, .formacion h3{
     margin-bottom: var(--pirem);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: var(--sizetitulos);
+    font-weight: var(--weighttitulos);
     color: var(--colortitulos)
 }
 
@@ -208,8 +213,8 @@ a {
 
 .experiencia h3 {
     margin-bottom: var(--pirem);
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: var(--sizetitulos);
+    font-weight: var(--weighttitulos);
     color: var(--colortitulos);
 }
 
@@ -225,30 +230,68 @@ a {
 
 /*----Contacto----*/
 .contacto {
-    padding: 1.75rem;
+    padding: 1.57rem;
     background: aliceblue;
 }
 
 .contacto_container {
     display: flex;
-    height: 26rem;
-    flex-direction: column;
-    flex-wrap: wrap;
+    height: 33rem;
+    justify-content: space-evenly;
+    /* padding: 0px 7rem; */
 }
 
 .contacto img {
-    height: 25rem;
+    /* height: 25rem; */
 }
 
 .contactoform__text {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+}
+
+.contactoform__text h2{
+    font-size: var(--pirem);
+    margin: -3.14vh 0 3.14vh;
+}
+
+.contactoform__text h3{
+    font-size: 1.57rem;
+}
+
+.contactoform__text h4 {
+    margin: 3vh 0;
+    font-size: 1.15rem;
 }
 
 .contactoform {
     display: flex;
+    width: 80%;
     flex-direction: column;
+    height: -webkit-fill-available;
+    justify-content: space-between;
+}
+
+.contactoform__input{
+    height: var(--pirem);
+    border: none;
+    border-radius: 10px;
+}
+
+.contactoform__textarea{
+    resize: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.contactoform__button{
+    width: 10rem;
+    height: 3.14rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #062ff8;
+    color: #fff;
+    margin-top: 2rem;
 }
 
 /*----footer----*/
