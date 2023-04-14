@@ -1,0 +1,41 @@
+@media only screen and (min-width: 200px) and (max-width: 768px){
+    .formacion__cards{
+        display: inline-block;
+    }
+    .experiencia{
+        height: auto;
+        margin-bottom: var(--pirem);
+    }
+
+    .experiencia img{
+        margin: unset;
+        width: 28rem;
+    }
+
+    .experiencia__box{
+        display: block;
+    }
+    .contacto_container img{
+        display: none;
+    };
+
+    .enlaces-nav li a{
+        color: red;
+    }
+
+    .titulo{
+        display: block;
+    }s
+
+    .titulo__container{
+        width: auto;
+    }
+}
+
+/* @media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1440px){
+
+} */
