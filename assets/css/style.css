@@ -12,6 +12,10 @@
     --colorfondo: #f4efef59;
     --colortitulos: #4d4a4a;
     --colorazulclaro: #dde8f7;
+    --colorbotondes: #3179ef;
+    --colorbotonhover: #1461dd;
+    --coloriabb:#1c5e00;
+    --colornegro:#000;
 
 }
 
@@ -22,9 +26,9 @@ html{
 
 .td{
     font-family: 'Raleway', sans-serif;
-    width: 96%;
+    /* width: 96%; */
     background-color: var(--colorfondo);
-    margin: var(--margincentrador);
+    /* margin: var(--margincentrador); */
 }
 
 ol ul li {
@@ -39,7 +43,8 @@ a {
 /*----NavBar-----*/
 
 .iabb{
-    color: #1c5e00;
+    color: var(--coloriabb);
+    font-size: 18px;
 }
 
 .menu__container{
@@ -47,18 +52,37 @@ a {
     justify-content: space-between;
     align-items: center;
     height: var(--pirem);
-    padding-top: var(--pivh);
+    margin: 1vw 2vw;
+    /* padding-top: var(--pivh); */
+}
+
+.menu__container nav{
+    display: flex;
+    /* width: 44rem; */
+    justify-content: flex-end;
+}
+
+.menu__container nav li a{
+    color: var(--colornegro);
+    font-size: 18px;
+}
+
+.menu__container nav li a:hover{
+    color: #e0d733f1;
 }
 
 .enlaces-nav{
-    display: flex;
-    width: 44vw;
-    justify-content: space-between;
+    display: none;
 }
 
-.nav__item a {
-    color: #000;
+.contacto-nav{
+    /* display: flex; */
 }
+
+/* .nav-item{
+    color: var(--colornegro);
+    font-size: 18px;
+} */
 
 /* ----Titulo-Links---*/
 
@@ -66,11 +90,11 @@ a {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    margin-top: var(--pivh);
+    margin: var(--pivw);
 }
 .foto__perfil{
-    width: 18rem;
-    border-radius: 15rem;
+    width: 30vw;
+    border-radius: 17rem;
     margin: 0 3.14rem 3.14rem;
 }
 
@@ -80,11 +104,11 @@ a {
 
 .titulo__container p {
     text-align: justify;
-    font-size: 1.4rem;
+    font-size: 27px;
 }
 
 .hi{
-    font-size: var(--pirem);
+    font-size: 40px;
     font-weight: 700;
     color: #4d4a4a;
     margin-bottom: 23px;
@@ -92,36 +116,50 @@ a {
 
 .enlaces-container{
     display: flex;
-    padding: var(--pirem);
+    margin: 3rem auto;
     justify-content: space-around;
 }
 
 .enlaces-container img{
-    width: var(--pirem);
+    width: 4rem;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
+}
+.enlaces-container img:hover{
+    /* -webkit-transition: width 1s ease;
+    transition: width 1s ease; */
+    width: 4rem;
 }
 
 /* ----Sobre mi---*/
 
 .info {
     background-color: var(--colorazulclaro);
-    padding: 3rem;
+    padding: 1rem 0rem;
 }
 
 .info h2 {
     margin-bottom: 2rem;
-    font-size: 1.75rem;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.info__container{
+    margin: 1.5rem;
 }
 
 .info p {
-    width: 70%;
+    font-size: 18px;
+    max-width: 72rem;
     text-align: justify;
-    line-height: 20px;
+    line-height: 23px;
 }
 
 /* ----Skills, hobbies----*/
 
 .skills, .hobbies{
-    max-width: 70%;
+    max-width: 90%;
+    /* width: 90%; */
     padding: 60px 0 0 0;
     text-align: center;
     margin: var(--margincentrador)
@@ -139,7 +177,7 @@ a {
 .skills__cards, .hobbies__cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skills__box, .hobbies__box{
@@ -164,21 +202,21 @@ a {
 /* ----formacion----*/
 
 .formacion {
-    max-width: 85%;
+    /* max-width: 85%; */
     padding: 60px 0 0 0;
     text-align: center;
-    margin: var(--margincentrador)
+    /* margin: var(--margincentrador) */
 }
 
 .formacion__cards{
     background: var(--colorazulclaro);
-    padding: 1rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
 }
 
 .formaciones__box  ul{
-    width: 18rem;
+    /* width: 18rem; */
     height: 18rem;
     display: flex;
     justify-content: space-around;
@@ -206,7 +244,7 @@ a {
 /*----Experiencia Laboral----*/
 
 .experiencia {
-    height: 90vh;
+    height: 45rem;
     padding: 60px 0 0 0;
     text-align: center;
 }
@@ -220,34 +258,87 @@ a {
 
 .experiencia__box {
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .experiencia__img {
-    width: 20%;
+    margin-right: 2rem;
+    max-width: 33rem;
+}
+
+.experiencia__usr {
+    padding: 2rem;
+    line-height: var(--pirem)
+}
+
+.exp_titulo-usr {
+    font-size: 2rem;
+}
+
+.exp_descripcion-usr{
+    font-size: 1.2rem;
+}
+
+.experiencia__botones{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    height: var(--pirem);
+    align-items: center;
+}
+
+#btn-blanco{
+    background-color: var(--colorblanco);
+    border-radius: 10px;
+    width: 8rem;
+    color: var(--colorbotondes);
+    border: solid 1px;
+    line-height: 2.75rem;
+    transition: .5s;
+}
+
+#btn-azul{
+    width: 8rem;
+    border-radius: 10px;
+    background-color: var(--colorbotondes);
+    color: var(--colorblanco);
+    border: solid 1px;
+    line-height: 2.75rem;
+    transition: .5s;
+}
+
+#btn-blanco:hover{
+    transition: .5s;
+    background-color: var(--colorbotondes);
+    color: var(--colorblanco);
+}
+
+#btn-azul:hover{
+    transition: .5s;
+    background-color: var(--colorblanco);
+    color: var(--colorbotondes);
 }
 
 /*----Contacto----*/
 .contacto {
     padding: 1.57rem;
-    background: aliceblue;
+    background: var(--colorsobre);
 }
 
 .contacto_container {
     display: flex;
     height: 33rem;
-    justify-content: space-evenly;
-    /* padding: 0px 7rem; */
+    justify-content: center;
 }
 
-.contacto img {
-    /* height: 25rem; */
+.contacto_container img{
+    min-width: 26rem;
 }
 
 .contactoform__text {
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 }
 
 .contactoform__text h2{
@@ -288,10 +379,16 @@ a {
     width: 10rem;
     height: 3.14rem;
     border: none;
+    cursor: pointer;
     border-radius: 10px;
-    background-color: #062ff8;
-    color: #fff;
+    background-color: var(--colorbotondes);
+    color: var(--colorblanco);
     margin-top: 2rem;
+}
+
+.contactoform__button:hover {
+    background-color: var(--colorbotonhover);
+    transition: .5s;
 }
 
 /*----footer----*/

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <title>Portafolio-Ivan Barbosa</title>
 </head>
 <body class="td">
@@ -19,14 +20,16 @@
             <h3 class="iabb">
                 Ivan Barbosa &#128187;
             </h3>
-            <nav">
+            <nav>
                 <ul class="enlaces-nav">
-                    <li class="nav__item"><a href="" >Sobre mi</a></li>
-                    <li class="nav__item"><a href="" >Skills</a></li>
-                    <li class="nav__item"><a href="" >Hobbies</a></li>
-                    <li class="nav__item"><a href="" >Formacion</a></li>
-                    <li class="nav__item"><a href="" >Proyectos</a></li>
-                    <li class="nav__item"><a href="" >ivanbb2013@gmail.com</a></li>
+                    <li><a class="nav-item" href="" title="Ir a sección Sobre mi">Sobre mi</a></li>
+                    <li><a class="nav-item" href="" title="Ir a sección Skills">Skills</a></li>
+                    <li><a class="nav-item" href="" title="Ir a sección Hobbies">Hobbies</a></li>
+                    <li><a class="nav-item" href="" title="Ir a sección Formacion">Formacion</a></li>
+                    <li><a class="nav-item" href="" title="Ir a sección Proyectos">Proyectos</a></li>
+                </ul>
+                <ul class="contacto-nav">
+                    <li><a class="nav-item-c" href="" title="Contacto">ivanbb2013@gmail.com</a></li>
                 </ul>
             </nav>
         </div>
@@ -34,15 +37,18 @@
     <main class="principal">
 <!----------------Titulo-Links------------->
         <section class="titulo">
-            <img class="foto__perfil" src="assets/img/ph-bio.jpg" alt="foto bio">
+            <div class="container-fotoperfil">
+                <img class="foto__perfil" src="assets/img/ph-bio.jpg" alt="foto bio">
+            </div>
             <div class="titulo__container">
                 <h1 class="hi">Hola, mi nombre es Ivan Barbosa y construyo paginas web</h1>
                 <p>Soy analista en  desarollo de sistemas de informacion y estoy profundizando en el aprendizaje de desarollo web de la mano de Oracle ONE en Alura Latam.</p>
                 <nav>
                     <ul class="enlaces-container">
-                        <li class="titulo__items"><a href="https://github.com/http-andres2122"><img src="assets/img/png/icons8-github-96.png" alt="Github"></a></li>
-                        <li class="titulo__items"><a href="https://www.linkedin.com/in/ivan-barbosa-45b84722a/"><img src="assets/img/png/linkedin.png" alt="Linkedin"></a></li>
-                        <li class="titulo__items"><a href="https://www.instagram.com/http.andres2122/"><img src="assets/img/png/instagram 2.png" alt="Instagram"></a></li>
+                        <li class="titulo__items"><a href="https://github.com/http-andres2122" title="Ir a GitHub"><img src="assets/img/png/icons8-github-96.png" alt="Github"></a></li>
+                        <li class="titulo__items"><a href="https://www.linkedin.com/in/ivan-barbosa-45b84722a/" title="Ir a Linkedin"><img src="assets/img/png/linkedin.png" alt="Linkedin"></a></li>
+                        <li class="titulo__items"><a href="https://www.instagram.com/http.andres2122/" title="Ir a Instagram"><img src="assets/img/png/instagram 2.png" alt="Instagram"></a></li>
+                        <li class="titulo__items"><a href="##" title="Ir a Currículo"><img src="assets/img/textn.png" alt="HDV"></a></li>
                     </ul>
                 </nav>
             </div>
@@ -51,7 +57,7 @@
         <section class="info">
             <div class="info__container">
                 <h2>Sobre mi</h2>
-                <p>Amante de la tecnologia, me gusta programar y dia a dia aprender nuevas tecnicas de ello, tecnico en desarrollo de software, experiencia como jefe de proyectos de infraestructura de red, desarollador Front-End en proceso con conocimiento de React native, participante de diferentes programas como Oracle Next Education, OpenBootCamp y Linkedin learning, enfocado en la solucion de problemas que presente el cliente dia a dia.
+                <p>Amante de la tecnologia, me gusta programar, dia a dia aprender nuevas metodologias para mejorar en el desarollo web, tecnico en desarrollo de software, experiencia como jefe de proyectos de infraestructura de red, desarollador Front-End en proceso con conocimiento de React native, participante de diferentes programas como Oracle Next Education, OpenBootCamp y Linkedin learning, enfocado en la solucion de problemas que presente el cliente dia a dia.
                     </p>
             </div>
         </section>
@@ -176,20 +182,20 @@
                 <div class="formaciones__box">
                     <ul>
                         <li><img class="formacion_img" src="assets/img/svg/Sena_Colombia_logo.svg"></li>
-                        <li class="formacion_titulo"> <span>Tecnologo en Analisis y Desarollo de Informacion</span> [2020 - 2022] Sena
+                        <li class="formacion_titulo"> <span>Tecnologo en Analisis y Desarollo de Informacion</span> <br>[2020 - 2022] Sena
                         </li>
                     </ul>
                 </div>
                 <div class="formaciones__box">
                     <ul>
                         <li><img class="formacion_img" src="assets/img/Open-Bootcamp.png"></li>
-                        <li class="formacion_titulo"> <span>Desarollo Back-End</span> [En Curso] Open-Bootcamp</li>
+                        <li class="formacion_titulo"> <span>Desarollo Back-End</span> <br>[En Curso] Open-Bootcamp</li>
                     </ul>
                 </div>
                 <div class="formaciones__box">
                     <ul>
                         <li><img class="formacion_img" src="assets/img/svg/alurasvg.svg"></li>
-                        <li class="formacion_titulo"> <span>Desarollo Front-End</span> [En Curso] Alura Latam - Oracle one</li>
+                        <li class="formacion_titulo"> <span>Desarollo Front-End</span> <br>[En Curso] Alura Latam - Oracle one</li>
                     </ul>
                 </div>
             </div>
@@ -198,13 +204,14 @@
         <section class="experiencia">
             <h3>Proyectos</h3>
             <div class="experiencia__box">
-                <img class="experiencia__img" src="assets/img/encrypt ts.png" alt="">
+                <img class="experiencia__img" src="assets/img/encryptsh.png" alt="encryp">
+                <!-- <iframe src="https://http-andres2122.github.io/Encryptador-TSH/" frameborder="0" class="frametsh"></iframe> -->
                 <div class="experiencia__usr">
-                    <p>Encryptador</p>
-                    <p>Challenge Oracle Next Education </p>
+                    <p class="exp_titulo-usr">Encryptador</p>
+                    <p class="exp_descripcion-usr">Challenge Oracle Next Education </p>
                     <div class="experiencia__botones">
-                        <a href="">Repositorio</a>
-                        <a href="">Prueba</a>
+                        <a id="btn-blanco" href="">Repositorio</a>
+                        <a id="btn-azul" href="">Prueba</a>
                     </div>
                 </div>
             </div>
