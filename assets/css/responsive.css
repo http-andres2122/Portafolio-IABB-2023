@@ -9,7 +9,7 @@
 
     .experiencia img{
         margin: unset;
-        width: 28rem;
+        width: 94vw;
     }
 
     .experiencia__box{
@@ -17,25 +17,66 @@
     }
     .contacto_container img{
         display: none;
-    };
-
-    .enlaces-nav li a{
-        color: red;
     }
 
     .titulo{
         display: block;
-    }s
+    }
 
     .titulo__container{
         width: auto;
     }
 }
 
-/* @media screen and (min-width: 1024px){
+@media screen and (min-width: 1024px){
+    .foto__perfil {
+        /* margin: 0 3.14rem 3.14rem; */
+        width: 18rem;
+    }
 
+    .formacion__cards {
+        padding: 1rem 3rem;
+    }
+
+    .titulo__container p {
+        /* font-size: 2.2vw; */
+    }
+
+    .enlaces-nav {
+        display: flex;
+        width: 44vw;
+        justify-content: space-evenly;
+    }
+
+    .menu__container nav {
+        width: 44rem; 
+    }
+
+    .menu__container nav li a{
+        /* font-size: 18px; */
+    }
+
+    .hi{
+        font-size: var(--pirem);
+    }
+    
+
+    .iabb{
+        font-size: 21px;
+    }
+
+    .enlaces-container img{
+        width: var(--pirem);
+    }
+
+    .skills, .hobbies {
+        max-width: 50%;
+    }
 }
 
-@media screen and (min-width: 1440px){
-
-} */
+@media screen and (min-width: 2000px){
+    .td{
+        width: 70%;
+        margin: var(--margincentrador);
+    }
+}

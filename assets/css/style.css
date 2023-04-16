@@ -44,7 +44,7 @@ a {
 
 .iabb{
     color: var(--coloriabb);
-    font-size: 21px;
+    font-size: 18px;
 }
 
 .menu__container{
@@ -57,19 +57,32 @@ a {
 }
 
 .menu__container nav{
-    min-width: 44vw;
+    display: flex;
+    /* width: 44rem; */
+    justify-content: flex-end;
+}
+
+.menu__container nav li a{
+    color: var(--colornegro);
+    font-size: 18px;
+}
+
+.menu__container nav li a:hover{
+    color: #e0d733f1;
 }
 
 .enlaces-nav{
-    display: flex;
-    /* width: 44vw; */
-    justify-content: space-between;
+    display: none;
 }
 
-.nav__item a {
-    /* color: var(--colornegro);
-    font-size: 18px; */
+.contacto-nav{
+    /* display: flex; */
 }
+
+/* .nav-item{
+    color: var(--colornegro);
+    font-size: 18px;
+} */
 
 /* ----Titulo-Links---*/
 
@@ -80,8 +93,8 @@ a {
     margin: var(--pivw);
 }
 .foto__perfil{
-    width: 18rem;
-    border-radius: 15rem;
+    width: 30vw;
+    border-radius: 17rem;
     margin: 0 3.14rem 3.14rem;
 }
 
@@ -91,11 +104,11 @@ a {
 
 .titulo__container p {
     text-align: justify;
-    font-size: 1.5rem;
+    font-size: 27px;
 }
 
 .hi{
-    font-size: var(--pirem);
+    font-size: 40px;
     font-weight: 700;
     color: #4d4a4a;
     margin-bottom: 23px;
@@ -103,14 +116,14 @@ a {
 
 .enlaces-container{
     display: flex;
-    padding: var(--pirem);
+    margin: 3rem auto;
     justify-content: space-around;
 }
 
 .enlaces-container img{
-    width: var(--pirem);
-    -webkit-transition: width 1s ease;
-    transition: width 1s ease;
+    width: 4rem;
+    -webkit-transition: width 0.3s ease;
+    transition: width 0.3s ease;
 }
 .enlaces-container img:hover{
     /* -webkit-transition: width 1s ease;
@@ -145,7 +158,8 @@ a {
 /* ----Skills, hobbies----*/
 
 .skills, .hobbies{
-    max-width: 50%;
+    max-width: 90%;
+    /* width: 90%; */
     padding: 60px 0 0 0;
     text-align: center;
     margin: var(--margincentrador)
@@ -163,7 +177,7 @@ a {
 .skills__cards, .hobbies__cards{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .skills__box, .hobbies__box{
@@ -196,13 +210,13 @@ a {
 
 .formacion__cards{
     background: var(--colorazulclaro);
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     display: flex;
     justify-content: space-between;
 }
 
 .formaciones__box  ul{
-    width: 18rem;
+    /* width: 18rem; */
     height: 18rem;
     display: flex;
     justify-content: space-around;
@@ -249,7 +263,7 @@ a {
 
 .experiencia__img {
     margin-right: 2rem;
-    min-width: 29rem;
+    max-width: 33rem;
 }
 
 .experiencia__usr {
