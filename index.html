@@ -225,10 +225,26 @@
                     <h3>¿Quieres Contactarme?</h3>
                     <h4>Completa el siguiente formulario y me pondre en contacto contigo lo antes posible</h4>
                     <form action="" class="contactoform">
-                        <input class="contactoform__input" type="text" id="nombre" name="nombre" placeholder="Nombre">
-                        <input class="contactoform__input" type="email" id="correo" name="correo" placeholder="Correo@dominio.com">
-                        <input class="contactoform__input" type="text" id="asunto" name="asunto" placeholder="Asunto">
-                        <textarea class="contactoform__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje"></textarea>
+                        <div class="input-container">
+                            <input class="contactoform__input" type="text" id="name" name="name" placeholder="Nombre" required data-contacto="nombre" >
+                            <label class="input-label" for="name">Nombre</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="contactoform__input" type="email" id="correo" name="correo" placeholder="Correo@dominio.com" required data-contacto="correo" >
+                            <label class="input-label" for="correo">Correo</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input-container">
+                            <input class="contactoform__input" type="text" id="asunto" name="asunto" placeholder="Asunto" required data-contacto="asunto" required>
+                            <label class="input-label" for="asunto">Asunto</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
+                        <div class="input-container">
+                            <textarea class="contactoform__textarea" rows="5" cols="40" id="mensaje" name="mensaje" placeholder="Mensaje" data-contacto="msj" required ></textarea>
+                            <label class="input-label" for="mensaje">Mensaje</label>
+                            <span class="input-message-error">Este campo no es valido</span>
+                        </div>
                         <button class="contactoform__button" type="submit" >Enviar Mensaje</button>
                     </form>
                 </div>
@@ -242,5 +258,7 @@
             </div>
         </footer>
     </main>
+
+<script src="./js/app.js" type="module"></script>
 </body>
 </html>
