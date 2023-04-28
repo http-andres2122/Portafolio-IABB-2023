@@ -328,7 +328,7 @@ a {
 
 .contacto_container {
     display: flex;
-    height: 33rem;
+    height: 36rem;
     justify-content: center;
 }
 
@@ -395,10 +395,28 @@ a {
     transition: all 0.25s;
 }
 
-.input-container--invalid .input {
+.input-container--invalid .contactoform__input{
     border: 1px solid var(--error-color);
+    color: var(--error-color);
     border-radius: 10px;
 }
+
+.input-container--invalid .contactoform__textarea{
+    border: 1px solid var(--error-color);
+    color: var(--error-color);
+    border-radius: 10px;
+}
+
+.input-container--invalid .input-label{
+    color: var(--error-color);
+}
+
+.input-container--invalid .input-message-error {
+    display: block;
+    color: var(--error-color);
+    margin-top: 0.5rem;
+}
+
 .contactoform__input{
     height: var(--pirem);
     border: none;

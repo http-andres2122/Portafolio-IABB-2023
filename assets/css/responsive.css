@@ -26,6 +26,11 @@
     .titulo__container{
         width: auto;
     }
+
+    /* .contacto_container{
+        height: 70vh;
+    } */
+
 }
 
 @media screen and (min-width: 1024px){
