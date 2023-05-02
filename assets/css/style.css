@@ -27,9 +27,7 @@ html{
 
 .td{
     font-family: 'Raleway', sans-serif;
-    /* width: 96%; */
     background-color: var(--colorfondo);
-    /* margin: var(--margincentrador); */
 }
 
 ol ul li {
@@ -54,12 +52,10 @@ a {
     align-items: center;
     height: var(--pirem);
     margin: 1vw 2vw;
-    /* padding-top: var(--pivh); */
 }
 
 .menu__container nav{
     display: flex;
-    /* width: 44rem; */
     justify-content: flex-end;
 }
 
@@ -76,14 +72,6 @@ a {
     display: none;
 }
 
-.contacto-nav{
-    /* display: flex; */
-}
-
-/* .nav-item{
-    color: var(--colornegro);
-    font-size: 18px;
-} */
 
 /* ----Titulo-Links---*/
 
@@ -126,11 +114,6 @@ a {
     -webkit-transition: width 0.3s ease;
     transition: width 0.3s ease;
 }
-.enlaces-container img:hover{
-    /* -webkit-transition: width 1s ease;
-    transition: width 1s ease; */
-    width: 4rem;
-}
 
 /* ----Sobre mi---*/
 
@@ -160,7 +143,6 @@ a {
 
 .skills, .hobbies{
     max-width: 90%;
-    /* width: 90%; */
     padding: 60px 0 0 0;
     text-align: center;
     margin: var(--margincentrador)
@@ -203,10 +185,8 @@ a {
 /* ----formacion----*/
 
 .formacion {
-    /* max-width: 85%; */
     padding: 60px 0 0 0;
     text-align: center;
-    /* margin: var(--margincentrador) */
 }
 
 .formacion__cards{
@@ -217,7 +197,6 @@ a {
 }
 
 .formaciones__box  ul{
-    /* width: 18rem; */
     height: 18rem;
     display: flex;
     justify-content: space-around;
@@ -370,13 +349,10 @@ a {
 }
 
 .input-container{
-    /* font-weight: var(--font-weigth-input); */
     position: relative;
-    /* margin-bottom: 1rem; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    /* box-sizing: border-box; */
 }
 
 .input-label {

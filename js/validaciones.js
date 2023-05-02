@@ -2,9 +2,7 @@ export function valida(input) {
     const tipoDeInput = input.dataset.contacto;
     if (validadores[tipoDeInput]) {
         validadores[tipoDeInput](input);
-        // console.log(tipoDeInput);
     }
-    // console.log(tipoDeInput);
 console.log(input.parentElement);
     if(input.validity.valid){
         input.parentElement.classList.remove("input-container--invalid");
