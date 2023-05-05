@@ -115,6 +115,12 @@ a {
     transition: width 0.3s ease;
 }
 
+.enlaces-container img:hover{
+    /* -webkit-transition: width 1s ease;
+    transition: width 1s ease; */
+    width: 4rem;
+}
+
 /* ----Sobre mi---*/
 
 .info {
