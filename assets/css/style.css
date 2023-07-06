@@ -116,8 +116,6 @@ a {
 }
 
 .enlaces-container img:hover{
-    /* -webkit-transition: width 1s ease;
-    transition: width 1s ease; */
     width: 4rem;
 }
 
@@ -230,7 +228,6 @@ a {
 /*----Experiencia Laboral----*/
 
 .experiencia {
-    height: 45rem;
     padding: 60px 0 0 0;
     text-align: center;
 }
@@ -242,14 +239,16 @@ a {
     color: var(--colortitulos);
 }
 
-.experiencia__box {
+.experiencia-box{
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: var(--pirem);
 }
 
 .experiencia__img {
     margin-right: 2rem;
-    max-width: 33rem;
+    max-width: 32rem;
 }
 
 .experiencia__usr {
