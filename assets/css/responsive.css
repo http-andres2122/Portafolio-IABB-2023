@@ -12,7 +12,7 @@
         width: 94vw;
     }
 
-    .experiencia__box{
+    .experiencia-box{
         display: block;
     }
     .contacto_container img{
@@ -26,16 +26,10 @@
     .titulo__container{
         width: auto;
     }
-
-    /* .contacto_container{
-        height: 70vh;
-    } */
-
 }
 
 @media screen and (min-width: 1024px){
     .foto__perfil {
-        /* margin: 0 3.14rem 3.14rem; */
         width: 18rem;
     }
 
@@ -56,11 +50,6 @@
     .menu__container nav {
         width: 44rem; 
     }
-
-    .menu__container nav li a{
-        /* font-size: 18px; */
-    }
-
     .hi{
         font-size: var(--pirem);
     }
