@@ -195,9 +195,9 @@ a {
 
 .formacion__cards{
     background: var(--colorazulclaro);
-    padding: 1rem 1rem;
+    /* padding: 1rem 1rem; */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .formaciones__box  ul{
@@ -344,7 +344,7 @@ a {
     display: flex;
     width: 80%;
     flex-direction: column;
-    height: -webkit-fill-available;
+    height: 100%;
     justify-content: space-between;
 }
 

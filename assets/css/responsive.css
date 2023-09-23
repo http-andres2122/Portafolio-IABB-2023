@@ -1,6 +1,7 @@
 @media only screen and (min-width: 200px) and (max-width: 768px){
     .formacion__cards{
         display: inline-block;
+        padding: 1.15rem;
     }
     .experiencia{
         height: auto;
@@ -19,12 +20,30 @@
         display: none;
     }
 
+    .contactoform__text{
+        margin: 0;
+    }
+
+    .contactoform{
+        width: 100%;
+    }
+
     .titulo{
         display: block;
     }
 
     .titulo__container{
         width: auto;
+    }
+
+    .container-fotoperfil{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .foto__perfil{
+        margin: 0 ;
     }
 }
 
